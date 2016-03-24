@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3ED28F0-6374-4AB2-82F9-C5F76655C047}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NationalVision.Automation.Tests</RootNamespace>
+    <AssemblyName>NationalVision.Automation.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\Automation.Mercury\Lib\WebDriver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cases\ContactLensNavigation\CLN_TC010.cs" />
+    <Compile Include="Cases\ContactLensNavigation\CLN_TC011.cs" />
+    <Compile Include="Cases\ContactLensNavigation\CLN_TC012.cs" />
+    <Compile Include="Cases\ContactLensNavigation\CLN_TC013.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC006_BC_ALERT.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC001.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC002.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC003.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC004.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC005.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC006.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\ContactLensOrder\CLO_TC007.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\ContactLensOrder\CLO_TC007_COLOR_ALERT.cs" />
+    <Compile Include="Cases\ContactLensOrder\CLO_TC009.cs" />
+    <Compile Include="Cases\EyeCareClub\EC_TC080.cs" />
+    <Compile Include="Cases\EyeGlassNavigation\EGN_TC052.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC039.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC040.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC041.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC042.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC043.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC044.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC047.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC045.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC046.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC048.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC049.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC050.cs" />
+    <Compile Include="Cases\EyeGlassWizard\SPO_TC051.cs" />
+    <Compile Include="Cases\Miscellaneous\SF_TC089.cs" />
+    <Compile Include="Cases\Miscellaneous\TC086.cs" />
+    <Compile Include="Cases\Miscellaneous\SF_TC088.cs" />
+    <Compile Include="Cases\MyFavourite\MF_TC077.cs" />
+    <Compile Include="Cases\MyFavourite\MF_TC076.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC065.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC066.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC067.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC068.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC071.cs" />
+    <Compile Include="Cases\MyAccount\Page_SEO.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC064.cs" />
+    <Compile Include="Cases\MyAccount\MA_TC063.cs" />
+    <Compile Include="Cases\MyAccount\Page_SEO_Multiple_Filters.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_SunGlasses_AllLinks.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_AllGlass_AllLinks.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_KidsGlass_AllLinks.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_MensGlass_AllLinks.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_WomensGlass_AllLinks.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\PageSEO\Page_SEO_WomensGlass_MultipleSelections.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC014.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC015.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC016.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC017.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC018.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC019.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC020.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC021.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC022.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC023.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC024.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC025.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC026.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC027.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC028.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC029.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC030.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC032.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC033.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC034.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC035.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC036.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC037.cs" />
+    <Compile Include="Cases\SingleFrameOrder\SFO_TC038.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation.Mercury.Report\Automation.Mercury.Report.csproj">
+      <Project>{7e7def9f-b4ab-4991-9785-742b81df4363}</Project>
+      <Name>Automation.Mercury.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automation.Mercury\Automation.Mercury.csproj">
+      <Project>{2cb9720c-15ba-4d2f-8c27-224a137e0afa}</Project>
+      <Name>Automation.Mercury</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NationalVision.Automation.Pages\NationalVision.Automation.Pages.csproj">
+      <Project>{02d344c7-5b32-4d49-9b3f-874c5dc726c1}</Project>
+      <Name>NationalVision.Automation.Pages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\ContactLenseNavigation\CLN_TC010.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLenseNavigation\CLN_TC011.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLenseNavigation\CLN_TC012.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLenseNavigation\CLN_TC013.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC001.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC002.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC003.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC004.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC005.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC006_BC_ALERT.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC006.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC007_COLOR_ALERT.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC007.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ContactLensOrder\CLO_TC009.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeCareClub\EC_TC080.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassNavigation\EGN_TC052.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC039.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC040.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC041.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC042.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC043.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC044.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC047.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC045.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC046.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC048.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC049.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC050.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\EyeGlassWizard\SPO_TC051.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Miscellaneous\SF_TC089.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Miscellaneous\TC086.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Miscellaneous\SF_TC088.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC065.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC066.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC067.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC068.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC071.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\Page_SEO.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC064.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\MA_TC063.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyAccount\Page_SEO_Multiple_Filters.csv" />
+    <None Include="Data\MyFavourite\MF_TC077.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\MyFavourite\MF_TC076.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_SunGlasses_AllLinks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_AllGlass_AllLinks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_KidsGlass_AllLinks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_MensGlass_AllLinks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_WomensGlass_AllLinks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\PageSEO\Page_SEO_WomensGlass_MultipleSelections.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC014.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC015.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC016.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC017.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC018.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC019.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC020.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC021.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC022.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC023.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC024.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC025.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC026.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC027.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC028.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC029.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC030.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC032.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC033.csv" />
+    <None Include="Data\SingleFrameOrder\SFO_TC034.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC035.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC036.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC037.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\SingleFrameOrder\SFO_TC038.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Test_Common.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

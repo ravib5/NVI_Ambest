@@ -1,0 +1,4 @@
+TestCaseID,Run,Browser,RequirementFeature,TestCaseTitle,Remarks
+SF_TC088,NO,FF,Search Functionality,Verifying Search Functionality - attributes verification,
+SF_TC089,NO,FF,Search Functionality,Verifying Search Functionality - attributes verification - TryAnotherSearch,
+TC086,NO,FF,Verify Shopping Cart Items,Verifying Shopping Cart- when no products added-add product from featured products-verify pricing details-Keep Shopping and Start CheckOut in Shopping Cart Page

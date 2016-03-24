@@ -1,0 +1,2 @@
+TestCaseID,TestCaseTitle,RequirementFeature,Run,Browser
+MF_TC076,Verify if user is able to create an account from favourites page,My Favourite,Yes,CHROME

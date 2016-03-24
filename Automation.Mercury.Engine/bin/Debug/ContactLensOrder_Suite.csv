@@ -1,0 +1,11 @@
+TestCaseID,Run,Browser,RequirementFeature,TestCaseTitle,Remarks
+CLO_TC001,NO,FF,Contact Lens Order,Verify Keep Shopping,
+CLO_TC002,NO,FF,Contact Lens Order,Verify checkout process with new account creation without eyecare club membership,
+CLO_TC003,NO,FF,Contact Lens Order,Verify checkout process with new account creation with eyecare club membership,
+CLO_TC004,NO,FF,Contact Lens Order,Verify checkout process for existing customer with eyecare club membership,
+CLO_TC005,NO,FF,Contact Lens Order,Verify checkout process for existing customer without eyecare club membership,
+CLO_TC006,NO,FF,Contact Lens Order,Verify checkout process for existing customer without eyecare club membership by changing prescription options,
+CLO_TC007,NO,FF,Contact Lens Order,Verify checkout process for existing customer with eyecare club membership by changing prescription options,
+CLO_TC009,NO,FF,Contact Lens Order,Verify checkout process for existing customer with existing eyecare club membership,
+CLO_TC006_BC_ALERT,NO,FF,Contact Lens Order,Verify Alert if BC values are not same and continue with the order,
+CLO_TC007_COLOR_ALERT,NO,FF,Contact Lens Order,Verify Alert if Color values are not same and continue with the order,

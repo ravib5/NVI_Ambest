@@ -1,0 +1,3 @@
+TestCaseID,Run,Browser,RequirementFeature,TestCaseTitle,Remarks,tabName
+MF_TC076,NO,FF,My Favourite,Verify if user is able to create an account from favourites page,,eyeglasses
+MF_TC076,YES,FF,My Favourite,Verify if user is able to create an account from favourites page,,eyeglasses

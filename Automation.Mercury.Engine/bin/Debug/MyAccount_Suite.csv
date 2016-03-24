@@ -1,0 +1,9 @@
+TestCaseID,Run,Browser,RequirementFeature,TestCaseTitle,Remarks
+MA_TC063,NO,FF,My Account,create new user-create new order-verify all the tabs in myaccount page
+MA_TC064,NO,FF,My Account,Login with the Existing user-Select the Order-Click on Reorder-Edit the Order and complete the Checkout process
+MA_TC065,NO,FF,My Account,Click on edit of 'AutoReorder'and verify AutoReorder section-disable the order and verify the status
+MA_TC066,NO,FF,My Account,Click on edit of 'AutoReorder'and verify AutoReorder section- click on place order now and verify the new order in order history
+MA_TC067,YES,FF,My Account,Navigate to ContactInfo tab and update the details,
+MA_TC068,NO,FF,My Account,Click on edit of 'AutoReorder'and verify AutoReorder section- click on place order now and verify the new order in order history
+MA_TC071,NO,FF,My Account,Click on prescriptions tab and verify adding and removing prescription
+Page_SEO,NO,FF,,

@@ -1,0 +1,2 @@
+TestCaseID,TestCaseTitle,RequirementFeature,Run,Browser
+MA_TC067,Navigate to ContactInfo tab and update the details,My Account,Yes,CHROME

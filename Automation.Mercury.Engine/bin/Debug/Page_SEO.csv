@@ -1,0 +1,6 @@
+TestCaseID,Run,Browser,RequirementFeature,TestCaseTitle,Remarks
+Page_SEO_WomensGlass_AllLinks,NO,CHROME,Verify Page SEOs,Selecting Multiple filter options and checking SEOs,
+Page_SEO_MensGlass_AllLinks,NO,CHROME,Verify Page SEOs,Selecting Multiple filter options and checking SEOs,
+Page_SEO_KidsGlass_AllLinks,NO,CHROME,Verify Page SEOs,Selecting Multiple filter options and checking SEOs,
+Page_SEO_AllGlass_AllLinks,NO,CHROME,Verify Page SEOs,Selecting Multiple filter options and checking SEOs,
+Page_SEO_SunGlasses_AllLinks,NO,CHROME,Verify Page SEOs,Selecting Multiple filter options and checking SEOs,
